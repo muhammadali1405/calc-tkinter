@@ -3,8 +3,9 @@ from tkinter import *
 
 
 window = Tk()
-window.geometry("400x500")
+window.geometry("400x550")
 window.title("Calculator")
+#window.configure(bg="white")
 num = StringVar()
 calculate = ""
 
@@ -14,7 +15,7 @@ calculate = ""
 
 
 display = Entry(window,width=55,borderwidth=5,textvariable=num)
-display.grid(row=0, column=0, columnspan=5)
+display.grid(row=0, column=0, columnspan=5,padx=10,pady=50)
 
 
 
